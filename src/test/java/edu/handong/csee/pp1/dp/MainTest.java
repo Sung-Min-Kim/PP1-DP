@@ -22,9 +22,28 @@ public class MainTest {
 	}
 	
 	@Test
-	public void testForTasks2() {
+	public void testForTasks2_1() {
 		// TASK2 TODO GitHub에서 작은 규모의 자바 프로젝트를 2개를 찾아, arff파일을 생성하시오. 파일이름은 [project이름].arff data디렉터리에 저장되게 하고
 		// 생성이 된 후 commit/push해야 함.
 		// 위 test main을 참고하여 실행하면 됨.
+		String[] args = {"/Users/sungminkim/git/test/task2/java","data/java.arff"};
+		// String[] args = {"/use/this/style/for/your/path"}; // for mac users
+		
+		assertEquals(args.length,2);
+		
+		Main.main(args);
+	}
+	
+	@Test
+	public void testForTask2_2() {
+		// TASK2 TODO GitHub에서 작은 규모의 자바 프로젝트를 2개를 찾아, arff파일을 생성하시오. 파일이름은 [project이름].arff data디렉터리에 저장되게 하고
+		// 생성이 된 후 commit/push해야 함.
+		// 위 test main을 참고하여 실행하면 됨.
+		String[] args = {"/Users/sungminkim/git/test/task2/java-1","data/java-1.arff"};
+		// String[] args = {"/use/this/style/for/your/path"}; // for mac users
+		
+		assertEquals(args.length,2);
+		
+		Main.main(args);
 	}
 }
